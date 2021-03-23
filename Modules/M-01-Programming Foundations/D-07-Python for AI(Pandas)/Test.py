@@ -17,5 +17,17 @@ df2 = pd.DataFrame({'grps': list('aaabbcaabcccbbc'),
                    'vals': [12, 345, 3, 1, 45, 14, 4, 52, 54, 23, 235, 21, 57, 3, 87]})
 
 df = pd.DataFrame(data)
-print(df)
-#print(df2)
+#print(df)
+
+
+def find_third_nen(x):
+    i = 0
+    for ele in x:
+        if ele == 'nan':
+            i += 1
+            if i == 3:
+                return ele
+
+
+print(find_third_nen(df.iloc[0]))
+print(df.iloc[0])
