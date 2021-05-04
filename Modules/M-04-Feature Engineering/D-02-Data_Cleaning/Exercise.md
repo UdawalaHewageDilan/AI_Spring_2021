@@ -6,7 +6,7 @@
 
 1. What is the missing datatype used in pandas?
 ```python
-NaN
+np.NaN
 ```
 2. How to replace all occurences of the value 9999 to missing in pandas?
 ```python
