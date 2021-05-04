@@ -6,9 +6,18 @@
 
 1. What is the missing datatype used in pandas?
 2. How to replace all occurences of the value 9999 to missing in pandas?
-3. How to get the absolute number of missings for each variable in pandas?
+3. How to get the absolute number of missings for each variable in pandas? 
+```python
+df.isnull().sum()
+```
 4. How to get the percentage of missings for each variable in pandas?
+```python
+df.isnull().sum()/df.shape[0]
+```
 5. How to drop rows with missing values?
+```python
+df.dropna()
+```
 6. How to drop variables with missing values?
 7. What is the univariate imputation method in sklearn?
 8. What is the multivariate imputation method in sklearn?
