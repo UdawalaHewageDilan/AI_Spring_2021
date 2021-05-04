@@ -35,8 +35,21 @@ from sklearn.impute import SimpleImputer
 s = SimpleImputer()
 ```
 8. What is the multivariate imputation method in sklearn?
+```python
+from sklearn.impute import IterativeImputer
+iter = IterativeImputer()
+```
 9. What is the best univariate imputation method to categorical variables? (Explain why)
+```python
+from sklearn.impute import SimpleImputer
+s = SimpleImputer(strategy='most_frequent')
+```
+
 10. What is the best univariate imputation method to numerical variables? (Explain why)
+```python
+from sklearn.impute import SimpleImputer
+s = SimpleImputer(strategy='mean')
+```
 
 
 ### 🔎 Outliers
