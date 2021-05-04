@@ -71,8 +71,8 @@ s = SimpleImputer(strategy='mean')
 
 Consider the following dataset: [San Francisco Building Permits](https://www.kaggle.com/aparnashastry/building-permit-applications-data). Look at the columns "Street Number Suffix" and "Zipcode". Both of these contain missing values.
 
-- Which, if either, are missing because they don't exist?
-- Which, if either, are missing because they weren't recorded?
+- Which, if either, are missing because they don't exist? The 'Street Number Suffix' most likely doesn't exsist for most streets.
+- Which, if either, are missing because they weren't recorded? The 'Zipcode' is a mandatory part of any address/building location therefore most likely the missing values are were not recorded.
 
 Hint: Do all addresses generally have a street number suffix? Do all addresses generally have a zipcode?
 
