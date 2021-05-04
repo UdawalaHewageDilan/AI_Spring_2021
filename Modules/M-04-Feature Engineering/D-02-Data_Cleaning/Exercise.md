@@ -19,7 +19,14 @@ df.isnull().sum()/df.shape[0]
 df.dropna()
 ```
 6. How to drop variables with missing values?
+```python
+df.dropna(axis=1)
+```
 7. What is the univariate imputation method in sklearn?
+```python
+from sklearn.impute import SimpleImputer
+s = SimpleImputer()
+```
 8. What is the multivariate imputation method in sklearn?
 9. What is the best univariate imputation method to categorical variables? (Explain why)
 10. What is the best univariate imputation method to numerical variables? (Explain why)
