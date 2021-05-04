@@ -5,7 +5,14 @@
 ### ❓ Missing values
 
 1. What is the missing datatype used in pandas?
+```python
+NaN
+```
 2. How to replace all occurences of the value 9999 to missing in pandas?
+```python
+filter = (df == 9999)
+df = df[filter].apply(lambda x : np.nan)
+```
 3. How to get the absolute number of missings for each variable in pandas? 
 ```python
 df.isnull().sum()
